@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/real"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/ic_baseline_book_24"
+        android:layout_marginLeft="30dp"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/seller"/>
+
+        </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/booknm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green mile"
+        android:layout_toRightOf="@id/real"
+        android:layout_alignTop="@id/real"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/projectcolor"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Satkali Anet"
+        android:layout_below="@id/booknm"
+        android:layout_toRightOf="@id/real"
+        android:textColor="@color/projectcolor"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_toRightOf="@id/real"
+        android:numStars="5"
+        android:stepSize="1"
+        android:rating="4"
+        />
+
+    <Button
+        android:id="@+id/readbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/oqukitap"
+        android:layout_below="@id/ratingBar"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:backgroundTint="@color/projectcolor"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/projectcolor"/>
+
+</RelativeLayout>
